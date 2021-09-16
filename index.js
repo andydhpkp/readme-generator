@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer')
 const generateMarkdown = require('./utils/generateMarkdown')
+const fs = require('fs')
+const util = require('util')
 
 // TODO: Create an array of questions for user input
 const questionsPrompt = () => {
@@ -52,6 +54,12 @@ const questionsPrompt = () => {
             message: 'If project allows for contributors, enter instructions for how to do so: '
         },
         {
+            type: 'checkbox',
+            name: 'license',
+            message: 'What license is your project? (Check all that apply)',
+            choices: ['MIT', 'Unlicense', 'Apache 2.0', 'GPLv3', 'BSD 3', 'Microsoft Public', 'Microsoft .NET library', 'LGPL 2.0']
+        },
+        {
             type: 'input',
             name: 'test',
             message: 'Enter instructions for testing: '
@@ -84,3 +92,4 @@ function init() {}
 
 // Function call to initialize app
 init();
+questionsPrompt();
