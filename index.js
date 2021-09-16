@@ -4,6 +4,8 @@ const generateMarkdown = require('./utils/generateMarkdown')
 const fs = require('fs')
 const util = require('util')
 
+const writeFileAsync = util.promisify(fs.writeFile);
+
 // TODO: Create an array of questions for user input
 const questionsPrompt = () => {
     return inquirer.prompt([
@@ -54,10 +56,10 @@ const questionsPrompt = () => {
             message: 'If project allows for contributors, enter instructions for how to do so: '
         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
-            message: 'What license is your project? (Check all that apply)',
-            choices: ['MIT', 'Unlicense', 'Apache 2.0', 'GPLv3', 'BSD 3', 'Microsoft Public', 'Microsoft .NET library', 'LGPL 2.0']
+            message: 'What license is your project? ',
+            choices: ['MIT', 'Unlicense', 'Apache 2.0', 'GPLv3', 'BSD 3', 'Mozilla Public License 2.0', 'CDDL-1.0']
         },
         {
             type: 'input',
@@ -85,11 +87,41 @@ const questionsPrompt = () => {
 }
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+    return writeFileAsync(fileName, data)
+
+/*     fs.writeFile(fileName, data, function(err) {
+
+        if (err) {
+            return console.log(err)
+        }
+    
+        console.log('done')
+    }) */
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+const init = async () => {
+    try {
+
+        // ask user questions
+        const responses = await questionsPrompt()
+
+        //create markdown
+        const readMeContent = generateMarkdown(responses)
+
+        //write to markdown
+        await writeToFile('./demo/README.md', readMeContent)
+
+        console.log("ReadMe.md has been created in the demo folder")
+
+    } catch (err) {
+        console.log('Sorry there was an error created the readme')
+        console.log(err)
+    } 
+}
 
 // Function call to initialize app
 init();
-questionsPrompt();
+//questionsPrompt();
