@@ -101,12 +101,14 @@ function generateMarkdown(data) {
   To run this application, please do the following installation:
   
   \`
-  ${data.installation}
+  ${data.installation} 
   \`
 
   ## Usage
 
+  \`
   ${data.usage}
+  \`
 
   ${renderLicenseSection(data.license)}
 
@@ -124,7 +126,7 @@ function generateMarkdown(data) {
 
   ## Questions
 
-  Link to my repository: [${data.username}](https://github.com/${data.username}).
+  Link to my GitHub: [${data.username}](https://github.com/${data.username}).
 
   Email me for any questions at: [${data.email}](mailto:${data.email}).
 

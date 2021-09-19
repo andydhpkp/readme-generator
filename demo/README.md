@@ -1,10 +1,10 @@
-# asdf
+# ReadMe-Generator
 
   [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](https://opensource.org/licenses/MIT)
 
   ## Description
 
-  asdf
+  A project built with inquirer that allows a user to answer a series of prompts in order to generate a readme.md
 
   ## Table of Contents
 
@@ -20,12 +20,12 @@
   To run this application, please do the following installation:
   
   `
-  asdf
+  npm i
   `
 
   ## Usage
 
-  asdf
+  node index.js
 
   ## License
     
@@ -46,7 +46,7 @@ This application is covered under the MIT license.
 
   ## Questions
 
-  Link to my repository: andydhpkp.
+  Link to my repository: [andydhpkp](https://github.com/andydhpkp).
 
-  Email me for any questions at: andrewdurham1094@gmail.com.
+  Email me for any questions at: [andrewdurham1094@gmail.com](mailto:andrewdurham1094@gmail.com).
 
