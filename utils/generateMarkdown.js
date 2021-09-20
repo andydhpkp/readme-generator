@@ -114,14 +114,14 @@ function generateMarkdown(data) {
 
   ## Contributing
 
-  ${data.contribute}
+  ${data.contribution}
 
   ## Tests
 
   To run tests, run the following:
 
   \`
-  ${data.tests}
+  ${data.test}
   \`
 
   ## Questions

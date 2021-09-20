@@ -13,12 +13,12 @@ A project built with inquirer that allows a user to answer a series of prompts i
 ![pic of generated readme]()
 ## Table of Contents
 
-*[Installation](#installation)
-*[Usage](#usage)
-*[License](#license)
-*[Contributing](#contributing)
-*[Tests](#tests)
-*[Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
 
