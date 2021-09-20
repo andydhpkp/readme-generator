@@ -1,10 +1,10 @@
-# ReadMe-Generator
+# Demo project
 
-  [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](https://opensource.org/licenses/MIT)
+  [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-red)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
 
-  A project built with inquirer that allows a user to answer a series of prompts in order to generate a readme.md
+  This project is a demo to display the readme generator
 
   ## Table of Contents
 
@@ -20,17 +20,19 @@
   To run this application, please do the following installation:
   
   `
-  npm i
+  npm i 
   `
 
   ## Usage
 
-  node index.js
+  `
+  no usage for this application because it is a demo
+  `
 
   ## License
     
 
-This application is covered under the MIT license.
+This application is covered under the Apache 2.0 license.
 
   ## Contributing
 
@@ -46,7 +48,7 @@ This application is covered under the MIT license.
 
   ## Questions
 
-  Link to my repository: [andydhpkp](https://github.com/andydhpkp).
+  Link to my GitHub: [andydhpkp](https://github.com/andydhpkp).
 
   Email me for any questions at: [andrewdurham1094@gmail.com](mailto:andrewdurham1094@gmail.com).
 
