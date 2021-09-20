@@ -1,10 +1,10 @@
-# Demo project
+# demo-project
 
-  [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-red)](https://opensource.org/licenses/Apache-2.0)
+  [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](https://opensource.org/licenses/MIT)
 
   ## Description
 
-  This project is a demo to display the readme generator
+  this is a demo to show the readme generator
 
   ## Table of Contents
 
@@ -26,24 +26,24 @@
   ## Usage
 
   `
-  no usage for this application because it is a demo
+  node index.js
   `
 
   ## License
     
 
-This application is covered under the Apache 2.0 license.
+This application is covered under the MIT license.
 
   ## Contributing
 
-  undefined
+  no contributors for this demo
 
   ## Tests
 
   To run tests, run the following:
 
   `
-  undefined
+  this demo has no tests
   `
 
   ## Questions
