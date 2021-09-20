@@ -7,10 +7,11 @@
 A project built with inquirer that allows a user to answer a series of prompts in order to generate a readme.md
 ## Demonstration
 ### Video
-
+![video of terminal application](terminal.mov)
+![video of readme](readme.mov)
 ### Screenshot
-![pic of terminal application]()
-![pic of generated readme]()
+![pic of terminal application](terminal.png)
+![pic of generated readme](readme.png)
 ## Table of Contents
 
 * [Installation](#installation)
